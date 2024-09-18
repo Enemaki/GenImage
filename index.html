@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Mashup App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>GenImage</h1>
+      <p class="subtitle">Generate images from text input</p>
+      <form id="posterForm" class="poster-form">
+        <label for="movie-title" class="hidden">Prompt:</label>
+        <input type="text" id="movie-title" placeholder="Image description" required/>
+        <button type="submit" id="generatePosterBtn">Generate Image</button>
+      </form>
+      <div id="poster-output" class="poster-output"></div>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
